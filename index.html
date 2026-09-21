@@ -7,16 +7,16 @@
 <meta name="description" content="Live tracker of India's results, schedule, records and history at the Asian Games 2026.">
 <style>
 :root{
-  --bg:#0b0f1a; --bg2:#101728; --card:#151d33; --card2:#1a2440;
-  --saffron:#ff9933; --green:#138808; --white:#f5f5f5; --gold:#ffd700;
-  --silver:#c0c0c0; --bronze:#cd7f32; --muted:#8b96ad; --line:#24304f;
-  --blue:#3b82f6; --red:#ef4444;
+  --bg:#e9fbf8; --bg2:#d7f5f1; --card:#ffffff; --card2:#effbf9;
+  --saffron:#f28c28; --green:#138808; --white:#163b3a; --gold:#c99a00;
+  --silver:#6f7f82; --bronze:#a9652a; --muted:#557271; --line:#b9ded9;
+  --blue:#159a9c; --red:#d94a4a;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--white);line-height:1.55}
 a{color:inherit;text-decoration:none}
-.topbar{position:sticky;top:0;z-index:50;background:rgba(11,15,26,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar{position:sticky;top:0;z-index:50;background:rgba(233,251,248,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .topbar-inner{max-width:1180px;margin:0 auto;display:flex;align-items:center;gap:14px;padding:12px 20px;flex-wrap:wrap}
 .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.1rem;letter-spacing:.5px}
 .flag-dot{width:30px;height:20px;border-radius:4px;background:linear-gradient(to bottom,#ff9933 33%,#ffffff 33% 66%,#138808 66%);box-shadow:0 0 0 1px rgba(255,255,255,.2)}
@@ -25,7 +25,7 @@ a{color:inherit;text-decoration:none}
 @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(255,82,82,.6)}70%{box-shadow:0 0 0 8px rgba(255,82,82,0)}100%{box-shadow:0 0 0 0 rgba(255,82,82,0)}}
 nav{margin-left:auto;display:flex;gap:4px;flex-wrap:wrap}
 nav a{font-size:.8rem;font-weight:600;color:var(--muted);padding:6px 12px;border-radius:20px;transition:.2s}
-nav a:hover{color:#fff;background:var(--card2)}
+nav a:hover{color:#123b3a;background:var(--card2)}
 .hero{position:relative;overflow:hidden;background:radial-gradient(1200px 500px at 20% -10%,rgba(255,153,51,.18),transparent 60%),radial-gradient(1000px 500px at 90% -10%,rgba(19,136,8,.16),transparent 60%),var(--bg2);border-bottom:1px solid var(--line)}
 .hero-inner{max-width:1180px;margin:0 auto;padding:56px 20px 40px;text-align:center}
 .hero .kicker{display:inline-flex;align-items:center;gap:8px;font-size:.75rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--saffron);border:1px solid rgba(255,153,51,.35);padding:6px 16px;border-radius:30px;margin-bottom:18px;background:rgba(255,153,51,.07)}
@@ -34,14 +34,14 @@ h1 .grad{background:linear-gradient(90deg,#ff9933,#ffd27a,#7ee081);-webkit-backg
 .hero p.sub{max-width:720px;margin:16px auto 0;color:var(--muted);font-size:1rem}
 .tricolore{height:5px;background:linear-gradient(90deg,var(--saffron) 33%,#fff 33% 66%,var(--green) 66%);opacity:.9}
 .tally{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-top:30px}
-.tally-card{background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px;padding:18px 34px;min-width:130px;text-align:center;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+.tally-card{background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px;padding:18px 34px;min-width:130px;text-align:center;box-shadow:0 8px 24px rgba(22,92,88,.10)}
 .tally-card .num{font-size:2.6rem;font-weight:900;line-height:1}
 .tally-card .lbl{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-top:6px}
-.t-card-gold .num{color:var(--gold)} .t-card-silver .num{color:var(--silver)} .t-card-bronze .num{color:var(--bronze)} .t-card-total .num{color:#7ee0ff}
-.tally-card.total{border-color:rgba(126,224,255,.4)}
+.t-card-gold .num{color:var(--gold)} .t-card-silver .num{color:var(--silver)} .t-card-bronze .num{color:var(--bronze)} .t-card-total .num{color:#087f82}
+.tally-card.total{border-color:rgba(21,154,156,.35)}
 .meta-chips{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-top:24px}
-.chip{font-size:.76rem;font-weight:600;color:#cfd8ea;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:30px}
-.chip b{color:#fff}
+.chip{font-size:.76rem;font-weight:600;color:#416664;background:var(--card);border:1px solid var(--line);padding:6px 14px;border-radius:30px}
+.chip b{color:#163b3a}
 .wrap{max-width:1180px;margin:0 auto;padding:44px 20px}
 section{margin-bottom:56px;scroll-margin-top:90px}
 .sec-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:20px}
@@ -53,7 +53,7 @@ section{margin-bottom:56px;scroll-margin-top:90px}
 .card h3{font-size:1.05rem;margin-bottom:14px;display:flex;align-items:center;gap:8px}
 .event{display:flex;align-items:center;gap:12px;padding:11px 12px;border-radius:10px;border-bottom:1px dashed var(--line)}
 .event:last-child{border-bottom:none}
-.time{flex-shrink:0;font-size:.74rem;font-weight:700;color:#7ee0ff;background:rgba(59,130,246,.12);border:1px solid rgba(59,130,246,.25);padding:4px 9px;border-radius:8px;white-space:nowrap;min-width:78px;text-align:center}
+.time{flex-shrink:0;font-size:.74rem;font-weight:700;color:#087f82;background:rgba(21,154,156,.10);border:1px solid rgba(21,154,156,.25);padding:4px 9px;border-radius:8px;white-space:nowrap;min-width:78px;text-align:center}
 .ev-body{flex:1;min-width:0}
 .ev-title{font-size:.88rem;font-weight:700}
 .ev-sub{font-size:.74rem;color:var(--muted)}
@@ -64,7 +64,7 @@ section{margin-bottom:56px;scroll-margin-top:90px}
 .b-silver{background:rgba(192,192,192,.12);color:var(--silver);border:1px solid rgba(192,192,192,.4)}
 .b-bronze{background:rgba(205,127,50,.14);color:var(--bronze);border:1px solid rgba(205,127,50,.45)}
 .b-live{background:rgba(255,82,82,.14);color:#ff8080;border:1px solid rgba(255,82,82,.4)}
-.b-q{background:rgba(126,224,255,.1);color:#7ee0ff;border:1px solid rgba(126,224,255,.35)}
+.b-q{background:rgba(21,154,156,.08);color:#087f82;border:1px solid rgba(21,154,156,.35)}
 .medal-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
 .medal-card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;overflow:hidden}
 .medal-card::before{content:"";position:absolute;top:0;left:0;right:0;height:4px}
@@ -72,25 +72,25 @@ section{margin-bottom:56px;scroll-margin-top:90px}
 .mc-bronze::before{background:linear-gradient(90deg,#8a5527,#cd7f32)}
 .mc .sport{font-size:.7rem;font-weight:800;text-transform:uppercase;letter-spacing:1.2px;color:var(--muted)}
 .mc .athlete{font-size:1.15rem;font-weight:800;margin:6px 0 4px}
-.mc .event{font-size:.82rem;color:#c7d2e8}
+.mc .event{font-size:.82rem;color:#486967}
 .mc .medal-tag{position:absolute;top:14px;right:14px;font-size:.65rem;font-weight:900;padding:4px 10px;border-radius:20px;letter-spacing:1px}
 .story{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
 .story-card{background:linear-gradient(160deg,var(--card2),var(--card));border:1px solid var(--line);border-radius:16px;padding:22px}
 .story-card .tag{display:inline-block;font-size:.66rem;font-weight:900;text-transform:uppercase;letter-spacing:1.4px;padding:4px 12px;border-radius:20px;margin-bottom:12px}
 .tag-first{background:rgba(255,215,0,.14);color:var(--gold);border:1px solid rgba(255,215,0,.4)}
 .tag-record{background:rgba(239,68,68,.14);color:#ff9b9b;border:1px solid rgba(239,68,68,.35)}
-.tag-milestone{background:rgba(126,224,255,.1);color:#7ee0ff;border:1px solid rgba(126,224,255,.35)}
+.tag-milestone{background:rgba(21,154,156,.08);color:#087f82;border:1px solid rgba(21,154,156,.35)}
 .story-card h4{font-size:1.02rem;margin-bottom:8px}
-.story-card p{font-size:.86rem;color:#b9c4da}
+.story-card p{font-size:.86rem;color:#4e6d6b}
 .table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:16px}
 table{width:100%;border-collapse:collapse;font-size:.86rem;min-width:640px}
 thead th{background:var(--card2);padding:13px 14px;text-align:left;font-size:.72rem;text-transform:uppercase;letter-spacing:1px;color:var(--muted);border-bottom:1px solid var(--line)}
 tbody td{padding:11px 14px;border-bottom:1px solid var(--line)}
-tbody tr:hover{background:rgba(255,255,255,.025)}
+tbody tr:hover{background:rgba(21,154,156,.06)}
 tbody tr.best{background:rgba(255,215,0,.06)}
 tbody tr.host td:first-child::after{content:" ★ host";font-size:.66rem;color:var(--saffron);font-weight:700}
 .g{color:var(--gold);font-weight:800}.s{color:var(--silver);font-weight:800}.b{color:var(--bronze);font-weight:800}
-.total-cell{font-weight:800;color:#7ee0ff}
+.total-cell{font-weight:800;color:#087f82}
 .rank-good{color:#7ee081;font-weight:700}
 .chart-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
 .chart-legend{display:flex;gap:18px;flex-wrap:wrap;font-size:.76rem;color:var(--muted);margin-top:14px}
@@ -164,8 +164,8 @@ footer{border-top:1px solid var(--line);margin-top:20px}
       <h3 style="margin-bottom:16px">Medal growth chart — total medals per edition</h3>
       <svg viewBox="0 0 900 300" width="100%" preserveAspectRatio="xMidYMid meet">
         <g id="bars"></g>
-        <line x1="40" y1="260" x2="880" y2="260" stroke="#24304f" stroke-width="1"/>
-        <line x1="40" y1="60" x2="40" y2="260" stroke="#24304f" stroke-width="1"/>
+        <line x1="40" y1="260" x2="880" y2="260" stroke="#a9d5d0" stroke-width="1"/>
+        <line x1="40" y1="60" x2="40" y2="260" stroke="#a9d5d0" stroke-width="1"/>
         <text x="10" y="264">0</text><text x="10" y="184">50</text><text x="10" y="104">100</text>
       </svg>
       <div class="chart-legend"><span class="lg-g">Gold</span><span class="lg-s">Silver</span><span class="lg-b">Bronze</span></div>
@@ -197,14 +197,14 @@ const DATA = {
     intro: "A 501-strong Indian contingent — 267 men and 234 women — is chasing history across 36 disciplines, building on the nation's best-ever campaign at Hangzhou 2022. This is India's 20th consecutive Asian Games appearance."
   },
 
-  tally: { gold: 1, silver: 4, bronze: 9 },          // ← update as medals come in
+  tally: { gold: 0, silver: 4, bronze: 2 },          // ← update as medals come in
 
   chips: [                                            // small info chips under tally
-    { label: "Rank", value: "~10th" },
+    { label: "Rank", value: "~12th" },
     { label: "Contingent", value: "501 athletes" },
     { label: "Sports", value: "36 disciplines" },
     { label: "Edition", value: "India's 20th" },
-    { label: "Best ever", value: "107 medals (Hangzhou)" }
+    { label: "Best ever", value: "106 medals (Hangzhou)" }
   ],
 
   today: {                                            // ← today's results
